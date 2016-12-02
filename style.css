@@ -270,39 +270,34 @@ h6 {
 }
 
 h1 {
-	font-size: 36px;
+	font-size: 32px;
 }
 
 h2 {
-	font-size: 23px;
+	font-size: 30px;
 	color: #be1f24;
 	font-family: 'Montserrat', sans-serif;
-	margin-bottom: 20px;
-}
+	}
 
 h3 {
 	font-weight: 400;
-	font-size: 15px;
-	margin-bottom: 5px;
+	font-size: 24px;
 	color: #be1f24;
 }
 
 h4 {
-	margin-bottom: 15px;
-	text-transform: uppercase;
+	font-size: 20px;
 	color: #231f20;
 }
 
 h5 {
-	font-size: 20px;
+	font-size: 17px;
 }
 
 h6 {
-	font-size: 16px;
+	font-size: 14px;
 }
 
-	
-}
 /* Objects
 --------------------------------------------- */
 
@@ -786,9 +781,10 @@ img.alignright,
 --------------------------------------------- */
 
 .entry-title {
-	font-size: 36px;
-	line-height: 1;
+	font-size: 24px;
+	line-height: 1.15;
 	margin-bottom: 20px;
+	text-transform: uppercase;
 }
 
 .entry-title a,
@@ -2817,11 +2813,6 @@ a.alignleft img, img.alignleft, .wp-caption.alignleft {
 	color: #be1f24;
 }
 
-h1.entry-title {
-	font-size: 15px;
-	color: #231f20;
-	text-transform: uppercase;
-}
 
 
 
@@ -2985,10 +2976,7 @@ input:hover[type="submit"],
 	max-width: 1140px;
 }
 
-.entry-title {
-	font-size: 28px;
-	line-height: 1.15;
-}
+
 
 .pinkcircle175 {
 	border-radius: 50%;
