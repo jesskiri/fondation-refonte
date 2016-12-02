@@ -149,10 +149,13 @@ Defaults
 
 body {
 	background-color: #ffffff;
-	color: #222;
+	/*color: #222;*/
+	color: #4a4b4c;
 	font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-	font-size: 16px;
-	line-height: 1.6;
+	/*font-size: 16px;*/
+	font-size: 14px;
+	/*line-height: 1.6;*/
+	line-height: 21px;
 }
 
 a,
@@ -192,7 +195,16 @@ a:hover {
 	text-decoration: underline;
 }
 
+/*p {
+	margin: 0 0 24px;
+	padding: 0;
+}
+*/
 p {
+	color: #4a4b4c;
+	font-size: 14px;
+	line-height: 21px;
+	/*text-align: justify;*/
 	margin: 0 0 24px;
 	padding: 0;
 }
@@ -250,11 +262,10 @@ h4,
 h5,
 h6 {
 	color: #333;
-	font-family: 'Montserrat', sans-serif;;
+	font-family: 'Montserrat', sans-serif;
 	font-weight: 400;
 	line-height: 1.25;
-	margin: 0;
-	margin-bottom: 10px;
+	margin: 0 0 10px;
 	padding: 0;
 }
 
@@ -263,16 +274,23 @@ h1 {
 }
 
 h2 {
-	font-size: 30px;
-	font-size: 3em;
+	font-size: 23px;
+	color: #be1f24;
+	font-family: 'Montserrat', sans-serif;
+	margin-bottom: 20px;
 }
 
 h3 {
-	font-size: 24px;
+	font-weight: 400;
+	font-size: 15px;
+	margin-bottom: 5px;
+	color: #be1f24;
 }
 
 h4 {
-	font-size: 20px;
+	margin-bottom: 15px;
+	text-transform: uppercase;
+	color: #231f20;
 }
 
 h5 {
@@ -283,6 +301,8 @@ h6 {
 	font-size: 16px;
 }
 
+	
+}
 /* Objects
 --------------------------------------------- */
 
@@ -514,10 +534,16 @@ Structure and Layout
 
 /* Content  */
 
-.content {
+/*.content {
 	float: right;
 	width: 800px;
 	padding: 40px 60px 10px;
+}*/
+/*YDESF*/
+.content {
+	float: right;
+	width: 800px;
+	padding: 40px 12px 10px;
 }
 
 .content-sidebar .content {
@@ -718,8 +744,9 @@ img.alignright,
 	background-color: #ffffff;
 	color: #777;
 	font-size: 12px;
-	margin: -40px -60px 30px;
-	padding: 20px;
+	/*margin: -40px -60px 30px;*/
+	margin: -30px 0 30px;
+	/*padding: 20px;*/
 }
 
 .executive-pro-home .breadcrumb {
@@ -2392,11 +2419,13 @@ Media Queries
 	}
 	
 	.breadcrumb {
-		margin: -30px -40px 30px;
+		/*margin: -30px -40px 30px;*/
+		margin: -20px 0 20px;
 	}
 	
 	.content {
-		padding: 30px 40px 10px;
+		/*padding: 30px 40px 10px;*/
+		padding: 30px 12px 10px;
 	}
 	
 	.site-header .genesis-nav-menu a {
@@ -2758,18 +2787,8 @@ a.alignleft img, img.alignleft, .wp-caption.alignleft {
 	margin: 0 20px 30px 0;
 }
 
-p {
-	color: #4a4b4c;
-	font-size: 14px;
-	line-height: 21px;
-	/*text-align: justify;*/
-}
 
-body {
-	color: #4a4b4c;
-	font-size: 14px;
-	line-height: 21px;
-}
+
 
 .entry-content p {
 	margin-bottom: 20px;
@@ -2804,25 +2823,7 @@ h1.entry-title {
 	text-transform: uppercase;
 }
 
-h2 {
-	color: #be1f24;
-	font-family: 'Montserrat', sans-serif;
-	font-size: 23px;
-	margin-bottom: 20px;
-}
 
-h3 {
-	font-weight: 400;
-	font-size: 15px;
-	margin-bottom: 5px;
-	color: #be1f24;
-}
-
-h4 {
-	margin-bottom: 15px;
-	text-transform: uppercase;
-	color: #231f20;
-}
 
 .videoWrapper {
 	position: relative;
