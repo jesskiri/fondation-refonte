@@ -24,9 +24,9 @@ add_action( 'wp_enqueue_scripts', 'executive_load_scripts' );
 function executive_load_scripts() {
 
 	wp_enqueue_script( 'executive-responsive-menu', get_bloginfo( 'stylesheet_directory' ) . '/js/responsive-menu.js', array( 'jquery' ), '1.0.0' );
-	
+
 	wp_enqueue_style( 'dashicons' );
-	
+
 	wp_enqueue_style( 'google-font', '//fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700', array(), CHILD_THEME_VERSION );
 
 }
@@ -116,7 +116,7 @@ function executive_portfolio_post_type() {
 
 		)
 	);
-	
+
 }
 
 //* Add Portfolio Type Taxonomy to columns
@@ -132,8 +132,8 @@ function executive_portfolio_columns( $taxonomies ) {
 remove_action( 'genesis_site_description', 'genesis_seo_site_description' );
 
 //* Reposition the secondary navigation menu
-//*remove_action( 'genesis_after_header', 'genesis_do_subnav' );
-//*add_action( 'genesis_footer', 'genesis_do_subnav', 7 );
+// remove_action( 'genesis_after_header', 'genesis_do_subnav' );
+// add_action( 'genesis_footer', 'genesis_do_subnav', 7 );
 
 //* Reduce the secondary navigation menu to one level depth
 add_filter( 'wp_nav_menu_args', 'executive_secondary_menu_args' );
@@ -150,6 +150,10 @@ return $args;
 //* Relocate the post info
 remove_action( 'genesis_entry_header', 'genesis_post_info', 12 );
 add_action( 'genesis_entry_header', 'genesis_post_info', 5 );
+
+//* Relocate the post meta
+//remove_action( 'genesis_entry_footer', 'genesis_post_meta' );
+//add_action( 'genesis_entry_header', 'genesis_post_meta', 12 );
 
 //* Change the number of portfolio items to be displayed (props Bill Erickson)
 add_action( 'pre_get_posts', 'executive_portfolio_items' );
@@ -176,7 +180,7 @@ function executive_portfolio_post_info_meta( $output ) {
 //* Remove comment form allowed tags
 add_filter( 'comment_form_defaults', 'executive_remove_comment_form_allowed_tags' );
 function executive_remove_comment_form_allowed_tags( $defaults ) {
-	
+
 	$defaults['comment_notes_after'] = '';
 	return $defaults;
 
@@ -260,7 +264,7 @@ function new_nav_menu_items($items,$args) {
 
 }
 
- 
+
 
 add_filter('wp_nav_menu_items', 'new_nav_menu_items',10,2 );
 
@@ -290,7 +294,7 @@ add_action( 'wp_enqueue_scripts', 'custom_enqueue_scripts_styles' );
 function custom_enqueue_scripts_styles() {
 
 	wp_enqueue_style( 'font-awesome', '//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css' );
-	
+
 	wp_enqueue_script( 'global', get_bloginfo( 'stylesheet_directory' ) . '/js/global.js', array( 'jquery' ), '1.0.0', true );
 
 }
