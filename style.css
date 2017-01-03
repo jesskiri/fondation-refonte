@@ -196,7 +196,7 @@ p {
 	color: #333;
 	font-size: 14px;
 	line-height: 1.5;
-	text-align: justify;
+	text-align: left;
 	margin: 0 0 24px;
 	padding: 0;
 }
@@ -561,9 +561,9 @@ Structure and Layout
 /* Primary Sidebar */
 
 .sidebar-primary {
-	background-color: #f8f8f8;
 	float: right;
 	width: 340px;
+	text-align: center;
 }
 
 .sidebar-content .sidebar-primary {
@@ -2417,11 +2417,11 @@ Media Queries
 	}
 
 	.content {
-		width: 660px;
+		width: 650px;
 	}
 
 	.sidebar-primary {
-		width: 300px;
+		width: 310px;
 	}
 
 	.title-area {
@@ -2439,8 +2439,10 @@ Media Queries
 	}
 
 	.site-header .genesis-nav-menu a {
-		padding: 38px 14px 40px;
+		padding: 7px 9px;
+		font-size:10px;
 	}
+
 
 	.content #genesis-responsive-slider .flex-control-nav,
 	.content #genesis-responsive-slider .flex-direction-nav li a,
@@ -2468,7 +2470,7 @@ Media Queries
 	.header-image .title-area,
 	.header-image .site-title,
 	.header-image .site-title a {
-	    float: none;
+	  /*  float: none;*/
 	    margin: 0 auto;
 	}
 
@@ -2485,12 +2487,12 @@ Media Queries
 		text-align: center;
 	}
 
-	.genesis-nav-menu a,
+/*	.genesis-nav-menu a,
 	.genesis-nav-menu > .first > a,
 	.genesis-nav-menu > .last > a,
 	.site-header .genesis-nav-menu a {
 		padding: 16px;
-	}
+	} */
 
 	.site-header .search-form {
 		margin: 16px auto ;
@@ -2507,6 +2509,18 @@ Media Queries
 	.comment-list li.depth-1,
 	.ping-list li.depth-1 {
 		margin: 30px 0;
+	}
+
+	.widget.simple-social-icons {
+		display: none;
+	}
+
+	.site-header .widget_nav_menu {
+	    padding: 0 0 10px 0;
+	    float: right;
+	}
+	.sidebar {
+		padding: 0;
 	}
 
 }
@@ -2541,6 +2555,11 @@ Media Queries
 	.two-thirds {
 		margin: 0;
 		width: 100%;
+	}
+
+	.site-header .genesis-nav-menu a {
+		padding: 7px 9px;
+		font-size:10px;
 	}
 
 	.genesis-nav-menu.responsive-menu > .menu-item > .sub-menu,
@@ -2633,6 +2652,12 @@ Media Queries
 		text-align: center;
 	}
 
+	.home-middle,
+	.home-middle-center,
+	.home-middle-right  {
+		padding: 10px 1.5% 0 1.5%;
+	}
+
 	.executive-pro-portfolio .portfolio {
 		padding: 0 0 30px;
 	}
@@ -2661,6 +2686,21 @@ h1 {
 		padding: 12px;
 	}
 
+	.home-cta a.button {
+    display: inline-block;
+    text-align: center;
+    line-height: 1.3em;
+    padding: 8px;
+}
+.home-cta .button {
+    width: 100%;
+		height: auto;
+    margin: 10px 0 0 0;
+}
+.sidebar {
+	padding: 10px 12px 10px;
+}
+
 }
 
 @media only screen and (max-width: 500px) {
@@ -2671,6 +2711,20 @@ h1 {
 
 	.content .entry-header .entry-meta .entry-comments-link {
 		display: none;
+	}
+
+	h1 {
+		font-size: 16px;
+		line-height: 1;
+	}
+
+	.site-header .widget_nav_menu {
+			padding: 0 0 5px 0;
+			float: none;
+	}
+
+	.one-fourth {
+		width: 50%;
 	}
 
 }
@@ -2862,43 +2916,6 @@ table {
 	width: 100%;
 }
 
-/*.simple-social-icons li.social-gplus a {
-	border: 2px solid #B0ABAB !important;
-	color: #B0ABAB !important;
-}
-
-.simple-social-icons li.social-email a {
-	border: 2px solid #B0ABAB !important;
-	color: #B0ABAB !important;
-}
-
-.simple-social-icons li.social-facebook a {
-	border: 2px solid #B0ABAB !important;
-	color: #B0ABAB !important;
-}
-
-.simple-social-icons li.social-gplus a {
-	border: 2px solid #B0ABAB !important;
-	color: #B0ABAB !important;
-}
-
-.simple-social-icons li.social-twitter a {
-	border: 2px solid #B0ABAB !important;
-	color: #B0ABAB !important;
-}
-
-.simple-social-icons li.social-youtube a {
-	border: 2px solid #B0ABAB !important;
-	color: #B0ABAB !important;
-}
-
-.simple-social-icons li.social-linkedin a {
-	border: 2px solid #B0ABAB !important;
-	color: #B0ABAB !important;
-}*/
-
-
-
 td {
 	border-top: 1px solid #ddd;
 	padding: 6px !important;
@@ -2910,12 +2927,6 @@ td {
 	border-bottom: none !important;
 }
 
-.sidebar-primary {
-	background-color: #fff;
-	float: right;
-	width: 340px;
-	text-align: center;
-}
 
 .archive-pagination li a:hover, .archive-pagination li.active a {
 	background-color: #f15922;
@@ -2970,37 +2981,3 @@ td {
 	margin: 0 auto;
 	max-width: 1140px;
 }
-
-
-
-/*.pinkcircle175 {
-	border-radius: 50%;
-	background-color: #ED0677;
-	text-align: center;
-	line-height: 175px;
-	width: 175px;
-	height: 175px;
-}
-.pinkcircle175 a{
-	color: #ffffff;
-	text-decoration: none;
-	font-size: 20px;
-}
-.redcircle175 {
-	background-color: #BF1F24;
-	border-radius: 50%;
-	text-align: center;
-	/*line-height: 175px;
-	width: 175px;
-	height: 175px;
-	position: relative;
-
-}
-.redcircle175 a{
-	color: #ffffff;
-	text-decoration: none;
-	font-size: 20px;
-	position: absolute;
-	top: 17%;
-	left: 0%;
-}*/
