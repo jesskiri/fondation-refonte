@@ -23,7 +23,8 @@ add_theme_support( 'genesis-responsive-viewport' );
 add_action( 'wp_enqueue_scripts', 'executive_load_scripts' );
 function executive_load_scripts() {
 
-	wp_enqueue_script( 'executive-responsive-menu', get_bloginfo( 'stylesheet_directory' ) . '/js/responsive-menu.js', array( 'jquery' ), '1.0.0' );
+//* Uncomment to use Genesis responsive-menu
+	// wp_enqueue_script( 'executive-responsive-menu', get_bloginfo( 'stylesheet_directory' ) . '/js/responsive-menu.js', array( 'jquery' ), '1.0.0' );
 
 	wp_enqueue_style( 'dashicons' );
 
